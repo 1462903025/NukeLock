@@ -15,7 +15,7 @@ namespace NukeLock.Commands.Subcmds
         {
             if (!sender.CheckPermission("nl.arm"))
             {
-                response = "You don't have permission to execute this command. Required permission: nl.arm";
+                response = "您没有执行此命令的权限。所需权限: nl.arm";
                 return false;
             }
 

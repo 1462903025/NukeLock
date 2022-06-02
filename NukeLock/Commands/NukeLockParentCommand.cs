@@ -24,7 +24,7 @@ namespace NukeLock.Commands
         protected override bool ExecuteParent(ArraySegment<string> arguments, ICommandSender sender, out string response)
         {
             Player player = Player.Get(sender);
-            response = "\nPlease enter a valid subcommand:\n";
+            response = "\n请输入有效的子命令:\n";
             foreach (var command in AllCommands)
                 if (player.CheckPermission($"nl.{command.Command}"))
                     response += $"- {command.Command} ({string.Join(", ", Aliases)})\n";
